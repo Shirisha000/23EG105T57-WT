@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+</head>
+<body>
+
+  <h2>Student Registration Form</h2>
+
+  <form>
+    <table border="2" cellpadding="5" cellspacing="0">
+      <tr>
+        <td>First Name:</td>
+        <td>
+          <input type="text" name="firstName" maxlength="20" required>
+        (Max 20 characters a–z and A–Z)</td>
+        <!-- <td>(Max 20 characters a–z and A–Z)</td> -->
+      </tr>
+
+      <tr>
+        <td>Last Name:</td>
+        <td>
+          <input type="text" name="lastName" maxlength="20" required>
+        (Max 20 characters a–z and A–Z)</td>
+        <!-- <td>(Max 20 characters a–z and A–Z)</td> -->
+      </tr>
+
+      <tr>
+        <td>Date of Birth:</td>
+        <td>
+          <input type="date" name="dob" required>
+        </td>
+        <!-- <td></td> -->
+      </tr>
+
+      <tr>
+        <td>Email ID:</td>
+        <td>
+          <input type="email" name="email" required>
+        </td>
+        <!-- <td></td> -->
+      </tr>
+
+      <tr>
+        <td>Phone Number:</td>
+        <td>
+          <input type="tel" name="phone" pattern="\d{11}" required>
+        (11 digit Number)</td>
+        <!-- <td>(11 digit Number)</td> -->
+      </tr>
+
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="male" required> Male
+          <input type="radio" name="gender" value="female" checked> Female
+        </td>
+       
+      </tr>
+
+      <tr>
+        <td>Address:</td>
+        <td>
+          <textarea name="address" rows="4" cols="40" required></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td>City:</td>
+        <td>
+          <input type="text" name="city" maxlength="20" required>
+        (Max 20 characters a–z and A–Z)</td>
+    
+      </tr>
+
+      <tr>
+        <td>PIN Code:</td>
+        <td>
+          <input type="text" name="pin" required>
+        (6 digit number)</td>
+       
+      </tr>
+
+      <tr>
+        <td>State:</td>
+        <td>
+          <select name="state" required>
+            <option value="">-- Select State --</option>
+            <option>Andhra Pradesh</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option>Maharashtra</option>
+            
+          </select>
+        </td>
+       
+      </tr>
+
+      <tr>
+        <td>Country:</td>
+        <td>
+          <select name="country" required>
+            <option value="">-- Select Country --</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Canada</option>
+            <option>Australia</option> 
+          </select>
+        </td>
+        
+      </tr>
+
+      <tr>
+        <td>Hobby:</td>
+        <td >
+          <input type="checkbox" name="hobby" value="Drawing"> Drawing
+          <input type="checkbox" name="hobby" value="Singing"> Singing
+          <input type="checkbox" name="hobby" value="Dancing"> Dancing
+          <input type="checkbox" name="hobby" value="Sketching"> Sketch
+          <br>
+          Others: <input type="text" name="hobbyOther">
+        </td>
+      </tr>
+
+      <tr>
+        <td>Qualification:</td>
+        <td>
+          <table border="1" cellpadding="0" cellspacing="0">
+            <tr>
+              <th>S.No</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Year of Passing</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Class X</td>
+              <td><input type="text" name="boardX"></td>
+              <td><input type="text" name="percentX" ></td>
+              <td><input type="text" name="yearX" ></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Class XII</td>
+              <td><input type="text" name="boardXII"></td>
+              <td><input type="text" name="percentXII"></td>
+              <td><input type="text" name="yearXII" ></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Graduation</td>
+              <td><input type="text" name="boardGrad"></td>
+              <td><input type="text" name="percentGrad"></td>
+              <td><input type="text" name="yearGrad"></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input type="text" name="boardMast"></td>
+              <td><input type="text" name="percentMast" ></td>
+              <td><input type="text" name="yearMast"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Courses Applied For:</td>
+        <td >
+          <input type="radio" name="course" value="BCA" required> BCA
+          <input type="radio" name="course" value="B.Com"> B.Com
+          <input type="radio" name="course" value="B.Sc"> B.Sc
+          <input type="radio" name="course" value="B.A"> B.A
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
